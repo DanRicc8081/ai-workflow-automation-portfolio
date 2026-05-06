@@ -1,60 +1,86 @@
-# 🤖 AI Telegram Chatbot with Intent Routing
+# Telegram AI Chatbot Workflow
 
 ## 🎥 Demo Video
 
-Short walkthrough of the system and how it works:
+Short walkthrough of the workflow and how it operates.
 
 👉 [▶️ Watch Demo Video](https://www.loom.com/share/42a9d0174df54f97813f2abae811ca06)
 
-## 🧩 Problem
 
-Businesses and automation systems often need a simple way to interact with workflows in real time.
 
-Messaging platforms like Telegram can be used as an easy interface to send requests, receive answers, and trigger automated processes.
+## Problem
 
-## 💡 Solution
+Handling repetitive user questions manually can slow down response times and create repetitive communication tasks.
 
-This project connects a Telegram chatbot with a Make automation workflow.
+This workflow was built to automate message handling and route responses based on user intent.
 
-When a user sends a message, the workflow receives the message, processes it with OpenAI, and returns an appropriate response through Telegram.
 
-The system can route different types of messages depending on the detected intent.
 
-## 🧱 Architecture
+## Workflow Overview
 
-Telegram Message → Make → OpenAI → JSON Parsing → Google Sheets → Router → Telegram Response
+When a user sends a message through Telegram, the workflow sends the content to OpenAI for intent classification.
 
-This workflow processes incoming Telegram messages, classifies the user intent using AI, logs the interaction, and routes the response based on the result.
+The response is converted into structured data and routed through different workflow paths depending on the detected request type.
+
+Automated responses are then returned through Telegram based on the selected workflow route.
+
+
+
+## 🏗️ Architecture
+
+Telegram → OpenAI → Data Processing → Router → Telegram Response
+
+This workflow uses routing logic to organize different types of user requests and automate response handling through Telegram.
+
+Different workflow paths are triggered depending on the detected intent.
+
+
 
 ## 🛠️ Tech Stack
 
 - Make (Integromat)
-- Telegram Bot API
 - OpenAI API
-- Google Sheets
-- JSON Parser
+- Telegram Bot API
+- Webhooks
+
+
 
 ## 🚀 Key Features
 
-- Real-time Telegram message processing  
-- AI-powered intent detection  
-- Structured JSON parsing  
-- Intent-based routing  
-- Google Sheets logging  
-- Automated Telegram responses  
+- Automated intent classification
+- Telegram chatbot integration
+- Routing logic for different request types
+- Structured message processing
+- Automated response workflows
 
-## 📈 Outcome
 
-This project demonstrates how messaging platforms can be used as conversational interfaces for automation workflows.
 
-It enables real-time user interaction and provides a foundation for chatbot-based workflow automation.
+## Outcome
 
-## 🔮 Possible Improvements
+This workflow automates repetitive message handling and helps organize user interactions through structured routing and response automation.
 
-- Add conversation memory  
-- Add command-based routing such as /start or /help  
-- Connect the chatbot to databases or CRM tools  
-- Expand routing for more user intents  
+
+
+## Possible Improvements
+
+Future improvements could include:
+- improved handling of unclear user requests
+- memory and conversation history support
+- additional routing conditions
+- integration with external knowledge sources
+- stronger validation for unexpected inputs
+
+
+
+## What I Learned
+
+- Building chatbot-based automation workflows
+- Structuring AI responses into workflow actions
+- Using routing logic for conversational flows
+- Organizing automated user interaction processes
+
+
+
 
 ## 📸 Screenshots
 
