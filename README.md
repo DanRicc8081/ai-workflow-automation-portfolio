@@ -89,5 +89,14 @@ The portfolio focuses on practical automation use cases such as:
 - Automation logic and routing
 - JSON handling and structured data workflows
 - Messaging and notification automation
-- AI-assisted workflow design
+- Workflow documentation and automation structuring
 - Process-oriented problem solving
+
+## Current Learning Focus
+
+I am currently improving my knowledge in:
+- workflow reliability and validation
+- API integrations and webhooks
+- automation documentation
+- process optimization
+- basic Python for workflow automation
