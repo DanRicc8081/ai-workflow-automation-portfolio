@@ -19,6 +19,7 @@ This workflow was built to reduce repetitive email handling while still keeping 
 ## Workflow Overview
 
 When a new email is received, the workflow sends the message content to OpenAI to classify the request type and generate a draft response.
+
 The generated response is then routed through the workflow and prepared for human review before sending.
 
 
