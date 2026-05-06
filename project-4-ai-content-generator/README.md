@@ -10,29 +10,25 @@ Short walkthrough of the workflow and how it operates.
 
 ## Problem
 
-Creating repetitive written content manually can take time and slow down publishing workflows, especially when content needs to follow a consistent structure or format.
-
-This workflow was built to automate content generation and delivery using structured AI prompts and workflow automation.
-
+Preparing repetitive content manually can slow down operational or marketing workflows, especially when content needs to follow a consistent structure and delivery process.
 
 
 ## Workflow Overview
 
 When a content request is submitted, the workflow sends the prompt to OpenAI for content generation.
 
-The generated content is converted into structured output and routed through the workflow for formatting and delivery.
+The response is processed and formatted automatically before being routed through the workflow for delivery.
 
-Completed content is then sent automatically through Telegram for review or publishing preparation.
-
+Completed content is then sent through Telegram for review or publishing preparation.
 
 
 ## 🏗️ Architecture
 
 Webhook → OpenAI → Data Processing → Formatter → Telegram Delivery
 
-This workflow uses structured prompts and routing logic to automate content generation and organize delivery through Telegram.
+This workflow uses automated routing and formatting steps to organize generated content before delivery through Telegram.
 
-Different workflow paths can be triggered depending on the requested content type or format.
+Different workflow paths can be triggered depending on the type of content requested.
 
 
 
@@ -45,19 +41,17 @@ Different workflow paths can be triggered depending on the requested content typ
 
 
 
-## 🚀 Key Features
+## Key Workflow Functions
 
-- Automated AI content generation
 - Structured content formatting
 - Workflow routing for different content types
 - Telegram delivery integration
 - Automated content handling workflows
 
 
-
 ## Outcome
 
-This workflow reduces repetitive content preparation tasks by automating content generation, formatting, and delivery into a structured workflow process.
+This workflow reduces repetitive content preparation tasks by automating content generation, formatting, and delivery into a structured process.
 
 
 
@@ -74,7 +68,7 @@ Future improvements could include:
 
 ## What I Learned
 
-- Building AI-assisted content automation workflows
+- Building automated content workflows using OpenAI
 - Structuring generated content into organized outputs
 - Using routing logic for content handling processes
 - Organizing automated delivery workflows
