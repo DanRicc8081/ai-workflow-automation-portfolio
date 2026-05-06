@@ -4,7 +4,7 @@
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [▶️ Watch Demo Video](https://www.loom.com/share/8ac0332bd36f4fc99840d3a1fa38a016))
+👉 [▶️ Watch Demo Video](https://www.loom.com/share/8ac0332bd36f4fc99840d3a1fa38a016)
 
 
 
