@@ -30,7 +30,7 @@ A router then determines how the workflow should handle the lead:
 
 ## 🏗️ Architecture
 
-Webhook → OpenAI → JSON Parsing → Router → Google Sheets → Telegram
+Webhook → OpenAI → Data Processing → Router → Google Sheets → Telegram
 
 This workflow uses routing logic to separate high, medium, and low-priority leads into different automation paths.
 
@@ -61,7 +61,7 @@ High-priority leads trigger immediate notifications, while lower-priority leads 
 
 ## Outcome
 
-This workflow reduces repetitive manual lead review and helps prioritize important leads more efficiently.
+This workflow automates lead classification and prioritization, reducing repetitive review tasks and helping important leads get faster attention.
 
 
 
