@@ -20,7 +20,7 @@ This workflow was built to automate message handling and route responses based o
 
 When a user sends a message through Telegram, the workflow sends the content to OpenAI for intent classification.
 
-The response is converted into structured data and routed through different workflow paths depending on the detected request type.
+The response is converted into structured data and routed through different workflow paths based on the detected intent.
 
 Automated responses are then returned through Telegram based on the selected workflow route.
 
