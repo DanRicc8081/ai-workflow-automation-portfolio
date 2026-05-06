@@ -57,7 +57,7 @@ Different workflow paths can be triggered depending on the requested content typ
 
 ## Outcome
 
-This workflow helps reduce repetitive content preparation tasks and supports faster content organization and delivery through automation.
+This workflow helps reduce repetitive content preparation tasks and supports faster content preparation and delivery through automation.
 
 
 
