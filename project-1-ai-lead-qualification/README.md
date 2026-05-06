@@ -1,72 +1,87 @@
-# AI Lead Qualification System
+# AI Lead Qualification Workflow
 
 ## 🎥 Demo Video
 
-Short walkthrough of the system and how it works:
+Short walkthrough of the workflow and how it operates.
 
 👉 [▶️ Watch Demo Video](https://www.loom.com/share/4f232efe06224b9abc1340f28c3114aa) 
 
+
+
 ## Problem
 
-Businesses often receive many inbound leads through forms, chat systems, or APIs.  
-Reviewing and prioritizing each lead manually can be slow and inefficient, especially when only a small portion of leads require immediate attention.
+Businesses often receive many inbound leads through forms, chat systems, or APIs.
+
+Reviewing and prioritizing leads manually can be slow and repetitive, especially when only a small percentage of leads require immediate attention.
 
 
 
-## Solution
+## Workflow Overview
 
-This automation uses **AI classification and workflow routing** to automatically evaluate inbound leads.
+When a lead is received through a webhook, the workflow sends the message to OpenAI for classification.
 
-When a lead arrives through a webhook, the system sends the message to **OpenAI** for analysis.  
-The AI classifies the lead's **intent, urgency, and lead score**, and the workflow routes the lead to the appropriate path.
+The response is converted into structured data containing lead urgency, intent, and priority level.
 
-All leads are stored in **Google Sheets**, while **high-priority leads trigger an instant Telegram alert**.
+A router then determines how the workflow should handle the lead:
+- high-priority leads trigger Telegram alerts
+- all leads are logged into Google Sheets for tracking
 
 
 
-## 🧱 Architecture
+## 🏗️ Architecture
 
 Webhook → OpenAI → JSON Parsing → Router → Google Sheets → Telegram
 
-This workflow processes incoming leads, classifies them using AI, and routes them based on priority in real time.
+This workflow uses routing logic to separate high, medium, and low-priority leads into different automation paths.
 
-## 🛠 Tech Stack
+High-priority leads trigger immediate notifications, while lower-priority leads are stored for tracking without interrupting the workflow.
+
+
+
+## 🛠️ Tech Stack
 
 - Make (Integromat)
-- OpenAI API (GPT)
+- OpenAI API
 - Google Sheets
 - Telegram Bot API
 - Webhooks
 
-  
+
 
 ## 🚀 Key Features
 
-- Automatic lead classification using AI  
-- Lead scoring based on urgency and intent  
-- Priority-based routing (high, medium, low)  
-- Real-time Telegram alerts for high-priority leads  
-- Structured data storage in Google Sheets  
-
-The system prioritizes leads using AI classification, ensuring that high-value opportunities are identified and handled immediately.
-
+- Automated lead classification
+- Lead prioritization based on urgency and intent
+- Routing logic for different lead types
+- Real-time Telegram notifications
+- Automated tracking in Google Sheets
+- Structured JSON data handling
 
 
 
 ## Outcome
 
-This system automates lead prioritization, ensuring that high-value opportunities are handled first while reducing manual effort.
+This workflow reduces repetitive manual lead review and helps prioritize important leads more efficiently.
 
 
 
 ## Possible Improvements
 
-In a production environment, this system could be extended by replacing Google Sheets with more scalable solutions such as:
+Future improvements could include:
+- stronger validation for incomplete lead data
+- retry handling for failed API responses
+- additional routing conditions
+- integration with CRM platforms
 
-- CRM systems (HubSpot, Salesforce)
-- Databases (PostgreSQL, Airtable)
-- Lead management platforms
-- Integration with CRM systems for automated follow-up workflows
+---
+
+## What I Learned
+
+- Building multi-step automation workflows
+- Structuring AI responses into usable data
+- Using routers to control workflow behavior
+- Organizing automated notifications and tracking
+
 
 
 ## Screenshots
