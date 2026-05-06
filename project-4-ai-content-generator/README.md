@@ -17,7 +17,7 @@ Preparing repetitive content manually can slow down operational or marketing wor
 
 When a content request is submitted, the workflow sends the prompt to OpenAI for content generation.
 
-The response is processed and formatted automatically before being routed through the workflow for delivery.
+The response is processed and formatted automatically before being routed for delivery.
 
 Completed content is then sent through Telegram for review or publishing preparation.
 
@@ -28,7 +28,7 @@ Webhook → OpenAI → Data Processing → Formatter → Telegram Delivery
 
 This workflow uses automated routing and formatting steps to organize generated content before delivery through Telegram.
 
-Different workflow paths can be triggered depending on the type of content requested.
+Different routing paths can be triggered depending on the type of content requested.
 
 
 
@@ -43,10 +43,11 @@ Different workflow paths can be triggered depending on the type of content reque
 
 ## Key Workflow Functions
 
+- Automated content generation using OpenAI
 - Structured content formatting
-- Workflow routing for different content types
+- Routing logic for different content requests
 - Telegram delivery integration
-- Automated content handling workflows
+
 
 
 ## Outcome
