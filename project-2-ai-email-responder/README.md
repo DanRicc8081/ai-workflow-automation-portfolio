@@ -1,70 +1,84 @@
-# 📧 AI Email Auto-Responder System
+# AI Email Auto-Responder Workflow
 
 ## 🎥 Demo Video
 
-Short walkthrough of the system and how it works:
+Short walkthrough of the workflow and how it operates.
 
 👉 [▶️ Watch Demo Video](https://www.loom.com/share/8ac0332bd36f4fc99840d3a1fa38a016))
 
-## 🧩 Problem
 
-Businesses receive a large volume of emails, many of which are repetitive or low-priority.  
-Manually reviewing, categorizing, and responding to each message can be time-consuming and inefficient.
 
-## 💡 Solution
+## Problem
 
-This automation uses AI-powered classification and response generation to streamline email handling.
+Handling repetitive emails manually can slow down communication and increase response time, especially when many messages require similar replies.
 
-When a new email arrives in Gmail, the system extracts the content and sends it to OpenAI for analysis.  
-The AI classifies the message based on intent and determines whether a response is required.
+This workflow was built to reduce repetitive email handling while still keeping human review before responses are sent.
 
-If a reply is needed, the system generates a contextual response and creates a draft email in Gmail for human review.  
-If not, the email is automatically labeled and stored for reference.
 
-This approach reduces manual workload while maintaining human control over outgoing communication, ensuring quality and consistency.
 
-## 🧱 Architecture
+## Workflow Overview
 
-Gmail Trigger → Extract Email → OpenAI → JSON Parsing → Router → Gmail Draft / Label
+When a new email is received, the workflow sends the message content to OpenAI for classification and draft generation.
 
-This workflow processes incoming emails, classifies intent using AI, and routes them to either draft responses or automated labeling.
+The response is converted into structured data and routed based on the type of request.
 
-This modular design allows easy extension to CRM systems, databases, or additional communication channels.
+Draft replies are then generated automatically and prepared for human review before sending.
 
-## 🛠 Tech Stack
 
-- Make (Integromat)  
-- OpenAI API (GPT)  
-- Gmail API  
+
+## 🏗️ Architecture
+
+Gmail → OpenAI → Data Processing → Router → Draft Response Generation
+
+This workflow uses routing logic to organize incoming emails and automate draft creation for repetitive communication tasks.
+
+Human review remains part of the workflow before responses are finalized.
+
+
+
+## 🛠️ Tech Stack
+
+- Make (Integromat)
+- OpenAI API
+- Gmail API
 - Webhooks
 
-This stack enables scalable and modular automation workflows using no-code/low-code tools combined with AI services.
+
 
 ## 🚀 Key Features
 
-- Automatic email classification using AI  
-- AI-generated contextual responses  
-- Conditional routing (reply vs ignore)  
-- Draft email creation for human review  
-- Automatic labeling for ignored emails
+- Automated email classification
+- AI-generated draft responses
+- Routing logic for different email types
+- Human-in-the-loop review process
+- Structured email processing workflows
 
-This system ensures that only relevant emails require human attention, significantly improving operational efficiency and response consistency.
 
-## 📈 Outcome
 
-This system automates email triage and response generation, significantly reducing manual workload while ensuring consistent and context-aware communication.
+## Outcome
 
-By combining AI classification with controlled response drafting, the system enables faster handling of incoming emails while maintaining quality and consistency.
+This workflow helps reduce repetitive email handling and speeds up response preparation while maintaining human oversight before sending replies.
 
-## 🔮 Possible Improvements
 
-In a production environment, this system could be extended by:
 
-- Integrating with CRM systems (HubSpot, Salesforce)  
-- Adding sentiment analysis for better prioritization  
-- Auto-sending responses for low-risk scenarios  
-- Storing conversations in a database (PostgreSQL, Airtable)  
-- Building analytics dashboards for email trends  
+## Possible Improvements
+
+Future improvements could include:
+- improved handling of unclear or incomplete emails
+- retry logic for failed API responses
+- additional routing conditions
+- integration with CRM or ticketing systems
+
+
+
+## What I Learned
+
+- Building automated email handling workflows
+- Structuring AI-generated responses into usable outputs
+- Using routing logic to organize workflow behavior
+- Combining automation with human review processes
+
+
 
 ## 📸 Screenshots
 
