@@ -32,7 +32,7 @@ Telegram → OpenAI → Data Processing → Router → Telegram Response
 
 This workflow uses routing logic to organize different types of user requests and automate response handling through Telegram.
 
-Different workflow paths are triggered depending on the detected intent.
+Different workflow paths are triggered based on the detected intent.
 
 
 
