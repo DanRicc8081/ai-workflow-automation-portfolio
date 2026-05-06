@@ -1,8 +1,15 @@
-# Automation Engineer Portfolio
+# AI Workflow Automation Portfolio
 
-I build AI-powered automation systems that solve real operational problems using tools like OpenAI, Make, APIs, and messaging platforms.
+Entry-level portfolio focused on practical AI workflow automation using OpenAI, Make, APIs, webhooks, and messaging/email tools.
 
-This portfolio showcases end-to-end workflows including lead qualification, email automation, chatbot systems, and AI content generation.
+I build simple automation workflows that reduce repetitive manual tasks, support business operations, and connect AI services with real-world tools.
+
+Looking for entry-level roles in:
+- AI workflow automation
+- operations automation
+- automation support
+- AI implementation support
+- no-code / low-code automation
 
 ---
 
