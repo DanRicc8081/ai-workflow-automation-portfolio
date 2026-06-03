@@ -1,4 +1,4 @@
-# AI Email Auto-Responder Workflow
+# email-support-auto-responder
 
 ## 🎥 Demo Video
 
