@@ -1,4 +1,4 @@
-# AI Lead Qualification Workflow
+# telegram-lead-qualification-bot
 
 ## 🎥 Demo Video
 
