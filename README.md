@@ -1,4 +1,4 @@
-# AI Workflow Automation Portfolio
+# automation-workflow-portfolio
 
 Entry-level portfolio focused on workflow automation using OpenAI, Make, APIs, webhooks, and messaging/email tools.
 
