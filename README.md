@@ -1,102 +1,108 @@
 # automation-workflow-portfolio
 
-Entry-level portfolio focused on workflow automation using OpenAI, Make, APIs, webhooks, and messaging/email tools.
+Entry-level portfolio focused on practical workflow automation systems using OpenAI, Make, APIs, webhooks, and operational business workflows.
 
-I build practical workflows that automate repetitive tasks, support business operations, and connect tools such as email platforms, spreadsheets, messaging systems, and AI services.
-
-Looking for entry-level roles in:
-- AI workflow automation
-- operations automation
+Currently seeking opportunities in:
+- workflow automation
+- AI operations
 - automation support
-- AI implementation support
+- implementation support
+- operational automation
 
 
 
+# 🚀 Projects
 
-## 🚀 Projects
+## 1. Telegram Lead Qualification Bot
 
-## 1. AI Lead Qualification Workflow
+AI-powered lead qualification workflow that processes Telegram messages, classifies lead intent using OpenAI, routes conversations through Make, logs leads into Google Sheets, and triggers automated follow-up workflows.
 
-Classifies inbound leads using OpenAI and routes notifications through Make, Google Sheets, and Telegram.
+### Features
+- AI intent classification
+- lead routing
+- Telegram auto-replies
+- CRM logging
+- fallback handling
+- notification workflows
 
-**Tools:** OpenAI, Make, Google Sheets, Telegram API
+### Tools
+OpenAI, Make, Google Sheets, Telegram Bot API, Webhooks
 
-👉 [Watch Demo](https://www.loom.com/share/4f232efe06224b9abc1340f28c3114aa)  
-👉 [View Project](./project-1-ai-lead-qualification)
-
-
-
-## 2. AI Email Auto-Responder
-
-Automates email classification and generates draft responses using OpenAI, Gmail, and Make workflows with human review before sending.
-
-**Tools:** OpenAI, Make, Gmail API, Webhooks
-
-👉 [Watch Demo](https://www.loom.com/share/8ac0332bd36f4fc99840d3a1fa38a016)  
-👉 [View Project](./project-2-ai-email-responder)
+👉 Watch Demo  
+👉 View Project
 
 
 
-## 3. Telegram AI Chatbot Workflow
+## 2. Email Support Auto-Responder
 
-Processes Telegram user messages using OpenAI for intent detection and routes responses through automated workflows built in Make.
+Automated email support workflow that classifies incoming emails, generates AI-assisted draft responses, and routes customer communication through structured workflows with optional human review.
 
-**Tools:** OpenAI, Make, Telegram Bot API, Webhooks
+### Features
+- email intent classification
+- AI-generated draft responses
+- support workflow automation
+- escalation routing
+- automated email handling
 
-👉 [Watch Demo](https://www.loom.com/share/42a9d0174df54f97813f2abae811ca06)  
-👉 [View Project](./project-3-telegram-chatbot-integration)
+### Tools
+OpenAI, Make, Gmail API, Webhooks
 
-
-
-## 4. AI Content Generation Workflow
-
-Generates structured content using OpenAI and delivers formatted outputs through automated workflows for consistent content publishing.
-
-**Tools:** OpenAI, Make, Telegram, Webhooks
-
-👉 [Watch Demo](https://www.loom.com/share/ef67952808ef45ffab1025ac888e3695)  
-👉 [View Project](./project-4-ai-content-generator)
+👉 Watch Demo  
+👉 View Project
 
 
 
-## About Me
+## 3. Support Ticket Routing System
 
-I am transitioning into workflow automation and AI-assisted operations with a focus on practical business automation.
+AI-assisted support workflow that categorizes incoming support requests, assigns urgency levels, generates structured ticket summaries, and routes tickets through operational support workflows.
 
-My background in audio production, technical coordination, and teaching helped me develop experience in structured workflows, troubleshooting, communication, and process management.
+### Features
+- support ticket classification
+- urgency detection
+- automated routing
+- structured ticket summaries
+- workflow prioritization
+- operational escalation handling
 
-I currently build automation projects using OpenAI, Make, APIs, webhooks, Google Sheets, Gmail, and Telegram, and I am looking for an entry-level role where I can support automation processes, learn from experienced teams, and continue developing technical workflow automation skills.
+### Tools
+OpenAI, Make, Google Sheets, Telegram Bot API, JSON Parsing
 
-
-
-## Portfolio Purpose
-
-These projects were built to explore how workflow automation and AI tools can support repetitive business processes and operational tasks.
-
-The portfolio focuses on practical automation use cases such as:
-- lead qualification
-- email handling
-- chatbot workflows
-- AI-assisted content generation
-- automated notifications and routing
+👉 Watch Demo  
+👉 View Project
 
 
-## Skills Demonstrated
+
+# About Me
+
+I build practical workflow automation systems using OpenAI, Make, APIs, webhooks, Google Sheets, Gmail, and Telegram.
+
+My background in audio production, technical coordination, and teaching helped me develop strong problem-solving, troubleshooting, communication, and process management skills.
+
+I am currently seeking entry-level opportunities in workflow automation, AI operations, and automation support.
+
+
+
+# Workflow Focus
+
+The projects in this portfolio focus on practical operational workflows including:
+
+- lead qualification and routing
+- customer communication automation
+- support ticket handling
+- automated notifications and escalation
+- AI-assisted workflow processing
+- business process automation
+
+
+
+# Skills Demonstrated
 
 - Workflow automation using Make (Integromat)
 - OpenAI API integration
 - API connections and webhooks
-- Automation logic and routing
-- JSON handling and structured data workflows
+- Automation routing and filtering logic
+- JSON parsing and structured data workflows
 - Messaging and notification automation
-- Workflow documentation and automation structuring
+- Workflow troubleshooting and debugging
 - Process-oriented problem solving
-
-## Current Learning Focus
-
-I am currently improving my knowledge in:
-- workflow reliability and validation
-- API integrations and webhooks
-- automation documentation
-- process optimization
-- basic Python for workflow automation
+- Business workflow structuring
