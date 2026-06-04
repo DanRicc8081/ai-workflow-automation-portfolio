@@ -1,4 +1,4 @@
-# Telegram Lead Qualification Bot
+# 01-telegram-lead-qualification-bot/README.md
 
 AI-powered Telegram workflow that classifies incoming messages, logs leads to Google Sheets, routes requests by intent, and sends automated replies.
 
