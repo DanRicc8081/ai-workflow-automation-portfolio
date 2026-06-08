@@ -1,81 +1,99 @@
-# email-support-auto-responder
+# Email Support Auto-Responder
 
-## 🎥 Demo Video
+## Demo Video
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [▶️ Watch Demo Video](https://www.loom.com/share/8ac0332bd36f4fc99840d3a1fa38a016)
+👉 [Watch Demo Video](PASTE_YOUR_LOOM_LINK_HERE)
 
-
+---
 
 ## Problem
 
-Handling repetitive emails manually can slow down communication and increase response time, especially when many messages require similar replies.
+Handling repetitive support emails manually can slow down communication and increase response times.
 
-This workflow was built to reduce repetitive email handling while still keeping human review before responses are sent.
+Many requests contain similar questions that can be identified and answered automatically.
 
+This workflow generates draft responses while keeping human review before sending.
 
+---
 
 ## Workflow Overview
 
-When a new email is received, the workflow sends the message content to OpenAI to classify the request type and generate a draft response.
+When a new email is received:
 
-The generated response is then routed through the workflow and prepared for human review before sending.
+1. Gmail triggers the workflow.
+2. OpenAI analyzes the email content.
+3. The request is classified.
+4. A draft response is generated.
+5. The workflow routes the email according to its category.
+6. A Gmail draft is created for review.
 
+---
 
-## 🏗️ Architecture
+## Architecture
 
-Gmail → OpenAI → Data Processing → Router → Draft Response Generation
+Gmail → OpenAI → JSON Parse → Router → Gmail Draft
 
-This workflow uses routing logic to organize incoming emails and automate draft creation for repetitive communication tasks.
+---
 
-Human review remains part of the workflow before responses are finalized.
+## Technologies Used
 
+- Make.com
+- OpenAI
+- Gmail
+- JSON
 
+---
 
-## 🛠️ Tech Stack
+## Email Categories
 
-- Make (Integromat)
-- OpenAI API
-- Gmail API
-- Webhooks
+The workflow identifies:
 
+- Support Request
+- Pricing Inquiry
+- Booking Request
+- General Question
 
+---
 
-## 🚀 Key Features
+## Example Workflow
 
-- Automated email classification
-- AI-generated draft responses
-- Routing logic for different email types
-- Human-in-the-loop review process
-- Structured email processing workflows
+Incoming Email:
 
+"How much does your service cost?"
 
+Classification:
 
-## Outcome
+Pricing Inquiry
 
-This workflow helps reduce repetitive email handling and speeds up response preparation while maintaining human oversight before sending replies.
+Generated Draft:
 
+"Thank you for your inquiry. Pricing depends on the specific service requested. Please provide additional details and we will prepare a quote."
 
-
-## Possible Improvements
-
-Future improvements could include:
-- improved handling of unclear or incomplete emails
-- retry logic for failed API responses
-- additional routing conditions
-- integration with CRM or ticketing systems
-- stronger filtering for sensitive or ambiguous email requests
-
-
+---
 
 ## What I Learned
 
-- Building automated email handling workflows
-- Structuring AI-generated responses into usable outputs
-- Using routing logic to organize workflow behavior
-- Combining automation with human review processes
+- AI-powered email classification
+- Draft response generation
+- Workflow routing logic
+- Gmail automation
+- Structured data processing
+- Human-in-the-loop automation
 
+---
+
+## Possible Improvements
+
+- CRM integration
+- Automatic follow-ups
+- Sentiment analysis
+- Priority scoring
+- Multi-language support
+- Knowledge base integration
+
+---
 
 
 ## 📸 Screenshots
