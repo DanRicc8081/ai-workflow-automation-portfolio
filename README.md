@@ -13,7 +13,7 @@ Currently seeking opportunities in:
 
 # 🚀 Projects
 
-## 1. Telegram Lead Qualification Bot
+## 01-telegram-bot-mvp
 
 AI-powered lead qualification workflow that processes Telegram messages, classifies lead intent using OpenAI, routes conversations through Make, logs leads into Google Sheets, and triggers automated follow-up workflows.
 
