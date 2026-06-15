@@ -1,128 +1,133 @@
 # AI Support Ticket Routing System
 
+AI-powered support workflow that classifies incoming customer support tickets, evaluates urgency, assigns a priority score, logs structured data, and routes each ticket to the correct support path using Make.
+
 ## Demo Video
+
 Short walkthrough of the workflow and how it operates.
 
-👉 Watch Demo Video: [paste Loom link here]
+👉 [Watch Demo Video](#)
 
-## Overview
-This project is an AI-powered support operations workflow built with Make, OpenAI, Tally, Google Sheets, Gmail, and Telegram.
-
-The system collects customer support requests through a Tally form, classifies each ticket using OpenAI, stores the structured ticket data in Google Sheets, sends the customer a confirmation email, and routes the ticket to the correct internal support path.
+---
 
 ## Problem
-Support teams often receive different types of customer issues through forms or inboxes.
 
-Manually reviewing, categorizing, prioritizing, and routing each ticket takes time and can delay urgent cases.
+Support teams often receive different types of customer requests through forms or shared inboxes.
 
-## Solution
-This workflow automates first-level ticket triage.
+Manually reading each message, identifying the issue type, judging urgency, and deciding where to route it can be slow and inconsistent.
 
-It classifies each request by:
-- Category
-- Urgency
-- Priority score
-- Summary
-- Recommended action
-- Route
+This workflow automates the first layer of support triage so urgent and relevant tickets can be handled faster.
 
-The workflow then logs the ticket, sends a confirmation email, and alerts the correct internal team.
+---
 
-## Workflow
-1. Customer submits a support request through Tally.
-2. Make triggers the workflow.
-3. OpenAI classifies the ticket into structured JSON.
-4. JSON Parse extracts the AI-generated fields.
-5. Google Sheets logs the ticket.
-6. Gmail sends the customer a confirmation email.
-7. Router sends the ticket to the correct support path.
-8. Telegram sends an internal alert to the team.
+## Workflow Overview
+
+When a customer submits a support request:
+
+1. Tally captures the support ticket form response.
+2. Make triggers the automation.
+3. OpenAI analyzes the submitted issue.
+4. The ticket is classified by category and urgency.
+5. The AI returns structured JSON data.
+6. The ticket is logged in Google Sheets.
+7. A router sends the ticket to the correct support path.
+8. Telegram notifications can alert the correct team or owner.
+9. Gmail can send an optional confirmation email to the customer.
+
+---
 
 ## Architecture
-Tally Form → OpenAI → JSON Parse → Google Sheets → Gmail → Router → Telegram Alerts
+
+Tally Form → Make → OpenAI → JSON Parse → Google Sheets → Router → Telegram Notification / Gmail Confirmation
+
+---
+
+## Ticket Classification
+
+The workflow classifies tickets into categories such as:
+
+- technical issue
+- billing question
+- account access
+- feature request
+- general question
+
+It also evaluates:
+
+- urgency level
+- priority score from 1–100
+- short issue summary
+- recommended action
+- routing path
+
+### Example Inputs
+
+| Customer Issue | Category | Route |
+|---|---|---|
+| I cannot log into my account | account_access | account |
+| My invoice is incorrect | billing_question | billing |
+| The app keeps crashing | technical_issue | tech |
+| I want to request a new feature | feature_request | product |
+| I am not sure who to contact | general_question | fallback |
+
+---
+
+## Features
+
+- Tally support form trigger
+- AI ticket classification
+- Urgency detection
+- Priority scoring from 1–100
+- Structured JSON output
+- Google Sheets ticket database
+- Router-based support paths
+- Telegram notifications
+- Optional customer confirmation email through Gmail
+- Fallback routing for unclear tickets
+
+---
 
 ## Tools Used
+
 - Make
 - OpenAI
 - Tally
-- JSON Parse
 - Google Sheets
 - Gmail
-- Telegram Bot
-
-## Routing Logic
-- `technical_support` → Technical Support alert
-- `billing_support` → Billing Support alert
-- `customer_support` → Customer Support alert
-- `manual_review` → Fallback/manual review alert
-
-## Ticket Categories
-The workflow classifies requests into categories such as:
-
-- Technical issue
-- Billing question
-- Account access
-- Feature request
-- General question
-- Unknown
-
-## Priority Levels
-The workflow assigns:
-
-- High
-- Medium
-- Low
-
-It also generates a priority score from 1 to 10.
-
-## Example Output
-
-| Category | Urgency | Priority Score | Route |
-|---|---:|---:|---|
-| technical_issue | high | 9 | technical_support |
-| billing_question | high | 8 | billing_support |
-| general_question | low | 2 | customer_support |
-| unknown | low | 1 | manual_review |
-
-## Key Features
-- Structured support ticket intake
-- AI-based ticket classification
+- Telegram
 - JSON parsing
-- Google Sheets ticket database
-- Gmail confirmation email
-- Router-based support paths
-- Telegram internal alerts
-- Fallback route for unclear tickets
+- Router logic
+
+---
+
+## Business Value
+
+This workflow helps support teams:
+
+- reduce manual ticket review
+- identify urgent issues faster
+- route tickets to the correct team
+- keep support data structured
+- improve response consistency
+- maintain traceability through Google Sheets
+- avoid missing unclear or high-priority requests
+
+---
 
 ## Skills Demonstrated
-- Workflow automation
-- Prompt design
-- JSON parsing
-- Router/filter logic
-- Form intake automation
-- Google Sheets database logging
-- Gmail automation
-- Telegram alerting
-- Fallback handling
 
-## Possible Improvements
-- Airtable integration
-- Slack notifications
-- CRM integration
-- Escalation workflows
-- Ticket status tracking
-- Multi-agent assignment
+- Building a multi-step Make automation
+- Connecting Tally form submissions to workflows
+- Using OpenAI for ticket classification
+- Designing structured JSON outputs
+- Creating router-based decision logic
+- Logging support tickets into Google Sheets
+- Building notification workflows
+- Designing fallback paths for unclear cases
+- Documenting an operational automation system
 
-## Screenshots
+---
 
-### 1. Tally Support Form
-![Tally Support Form](1-tally-support-form.png)
+## Status
 
-### 2. Full Make Workflow
-![Full Make Workflow](2-full-workflow.png)
-
-### 3. Google Sheets Ticket Database
-![Google Sheets Ticket Database](3-google-sheets-ticket-database.png)
-
-### 4. Router Logic and Telegram Alerts
-![Router Logic and Telegram Alerts](4-router-telegram-alerts.png)
+Completed as part of an entry-level AI workflow automation portfolio.
