@@ -1,109 +1,127 @@
-# Email Support Auto-Responder
+# AI Email Auto-Responder Workflow
+
+AI-assisted email workflow that analyzes incoming emails, classifies the message type, generates a draft response, and keeps a human review step before sending.
 
 ## Demo Video
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [Watch Demo Video](PASTE_YOUR_LOOM_LINK_HERE)
+👉 [Watch Demo Video](#)
 
 ---
 
 ## Problem
 
-Handling repetitive support emails manually can slow down communication and increase response times.
+Many businesses receive repetitive emails about support, meetings, questions, or general requests.
 
-Many requests contain similar questions that can be identified and answered automatically.
+Manually reading each email, deciding what type of message it is, and writing a first response can take time and create delays.
 
-This workflow generates draft responses while keeping human review before sending.
+This workflow automates the first layer of email handling while keeping human control over the final response.
 
 ---
 
 ## Workflow Overview
 
-When a new email is received:
+When an email is received:
 
-1. Gmail triggers the workflow.
+1. Gmail triggers the Make workflow.
 2. OpenAI analyzes the email content.
-3. The request is classified.
-4. A draft response is generated.
-5. The workflow routes the email according to its category.
-6. A Gmail draft is created for review.
+3. The email is classified by message type.
+4. The AI returns structured JSON data.
+5. A router sends the email through the correct workflow path.
+6. For relevant emails, OpenAI generates a draft response.
+7. Gmail creates a draft reply for human review.
+8. The email interaction can be logged for tracking.
 
 ---
 
 ## Architecture
 
-Gmail → OpenAI → JSON Parse → Router → Gmail Draft
+Gmail Trigger → Make → OpenAI → JSON Parse → Router → Gmail Draft / Label / Log
 
 ---
 
-## Technologies Used
+## Email Classification
 
-- Make.com
+The workflow classifies incoming emails into categories such as:
+
+- support
+- meeting
+- FAQ
+- other
+
+It also evaluates:
+
+- confidence level
+- short email summary
+- whether an auto-draft should be created
+- recommended next action
+
+### Example Inputs
+
+| Email Type | Category | Action |
+|---|---|---|
+| I need help with a technical issue | support | create draft reply |
+| Can we schedule a call next week? | meeting | create draft reply |
+| What services do you offer? | FAQ | create draft reply |
+| Newsletter or irrelevant message | other | label or ignore |
+
+---
+
+## Features
+
+- Gmail email trigger
+- AI email classification
+- Structured JSON output
+- Router-based workflow paths
+- AI-generated draft replies
+- Human review before sending
+- Gmail draft creation
+- Optional email logging
+- Fallback handling for unclear emails
+
+---
+
+## Tools Used
+
+- Make
 - OpenAI
 - Gmail
-- JSON
+- JSON parsing
+- Router logic
+- Google Sheets
 
 ---
 
-## Email Categories
+## Business Value
 
-The workflow identifies:
+This workflow helps businesses:
 
-- Support Request
-- Pricing Inquiry
-- Booking Request
-- General Question
-
----
-
-## Example Workflow
-
-Incoming Email:
-
-"How much does your service cost?"
-
-Classification:
-
-Pricing Inquiry
-
-Generated Draft:
-
-"Thank you for your inquiry. Pricing depends on the specific service requested. Please provide additional details and we will prepare a quote."
+- reduce repetitive email handling
+- classify incoming messages faster
+- create first-draft responses automatically
+- keep humans in control before sending
+- improve response speed
+- reduce missed or delayed replies
+- organize email workflows by message type
 
 ---
 
-## What I Learned
+## Skills Demonstrated
 
-- AI-powered email classification
-- Draft response generation
-- Workflow routing logic
-- Gmail automation
-- Structured data processing
-- Human-in-the-loop automation
-
----
-
-## Possible Improvements
-
-- CRM integration
-- Automatic follow-ups
-- Sentiment analysis
-- Priority scoring
-- Multi-language support
-- Knowledge base integration
+- Building a Gmail-based automation workflow
+- Using OpenAI for email classification
+- Designing structured JSON outputs
+- Creating router-based decision paths
+- Generating AI-assisted draft replies
+- Keeping human review in the workflow
+- Using Gmail automation safely
+- Designing fallback paths
+- Documenting an AI-assisted communication workflow
 
 ---
 
+## Status
 
-## 📸 Screenshots
-
-### Automation Architecture
-![Architecture](screenshots/email-responder-automation-architecture.png)
-
-### Router Logic
-![Router](screenshots/email-responder-router-logic.png)
-
-### Example Output (Gmail Draft)
-![Output](screenshots/email-responder-gmail-draft.png)
+Completed as part of an entry-level AI workflow automation portfolio.
 
