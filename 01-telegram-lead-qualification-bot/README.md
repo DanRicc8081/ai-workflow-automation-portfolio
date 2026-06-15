@@ -1,33 +1,36 @@
 # Telegram Lead Qualification Bot
 
+AI-powered Telegram workflow that classifies incoming messages, identifies lead intent, logs data into Google Sheets, and sends automated replies through Make.
+
 ## Demo Video
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [Watch Demo Video](PASTE_YOUR_LOOM_LINK_HERE)
+👉 [Watch Demo Video](#)
 
 ---
 
 ## Problem
 
-Businesses often receive messages from potential customers through Telegram.
+Small businesses often receive inbound messages through Telegram from potential customers asking about bookings, pricing, or support.
 
-Manually reviewing every message, identifying customer intent, and responding can be time-consuming and inconsistent.
+Manually checking every message, identifying the customer intent, replying, and keeping track of the lead can be slow and inconsistent.
 
-This workflow automates lead qualification and provides immediate responses while keeping all interactions logged for tracking.
+This workflow automates the first response process and keeps lead information organized for follow-up.
 
 ---
 
 ## Workflow Overview
 
-When a user sends a message to a Telegram bot:
+When a user sends a message to the Telegram bot:
 
-1. The message triggers the workflow.
-2. OpenAI analyzes the message.
+1. Telegram triggers the Make workflow.
+2. OpenAI analyzes the incoming message.
 3. The message is classified by intent.
-4. The result is converted into structured JSON.
-5. The lead is logged in Google Sheets.
-6. A router sends the appropriate response back to the user.
+4. The AI output is converted into structured JSON.
+5. The interaction is logged in Google Sheets.
+6. A router sends the user through the correct response path.
+7. Telegram sends an automated reply or fallback response.
 
 ---
 
@@ -37,96 +40,76 @@ Telegram Bot → OpenAI → JSON Parse → Google Sheets → Router → Telegram
 
 ---
 
-## Technologies Used
-
-- Make.com
-- OpenAI
-- Telegram Bot API
-- Google Sheets
-- JSON
-
----
-
 ## Intent Classification
 
-The workflow classifies incoming messages into the following categories:
+The workflow classifies incoming messages into:
 
 - BOOKING
 - PRICING
 - SUPPORT
 - OTHER
 
-Examples:
+### Example Inputs
 
-| Message | Intent |
-|----------|----------|
+| User Message | Intent |
+|---|---|
 | I want to book a session | BOOKING |
-| How much does it cost? | PRICING |
+| How much does mixing cost? | PRICING |
 | I need help with my order | SUPPORT |
 | Hello | OTHER |
 
 ---
 
-## Example Responses
+## Features
 
-### BOOKING
-
-Thank you for your interest.
-
-Please provide your email address and preferred date so we can arrange a booking.
-
-### PRICING
-
-Thank you for your inquiry.
-
-Our pricing depends on the service requested. Please provide additional details for an accurate quote.
-
-### SUPPORT
-
-Your request has been received.
-
-A team member will review your message and follow up shortly.
-
-### OTHER
-
-Thank you for contacting us.
-
-Please let us know how we can assist you.
+- Telegram message trigger
+- AI intent classification
+- Structured JSON output
+- Google Sheets lead logging
+- Router-based workflow paths
+- Automated Telegram replies
+- Fallback handling for unclear messages
+- Human follow-up support through logged lead data
 
 ---
 
-## What I Learned
+## Tools Used
 
-- Building AI-powered automation workflows
+- Make
+- OpenAI
+- Telegram Bot API
+- Google Sheets
+- JSON parsing
+- Router logic
+
+---
+
+## Business Value
+
+This workflow helps small businesses:
+
+- respond faster to inbound messages
+- identify potential leads automatically
+- reduce manual message handling
+- keep customer requests organized
+- avoid losing booking or pricing inquiries
+- create a simple CRM-style lead log
+
+---
+
+## Skills Demonstrated
+
+- Building a Make automation workflow
+- Connecting Telegram with external tools
 - Using OpenAI for intent classification
-- Parsing structured JSON outputs
-- Implementing routing logic in Make.com
-- Integrating Telegram with external services
-- Logging workflow data in Google Sheets
+- Working with structured JSON outputs
+- Creating routing logic
+- Logging automation data into Google Sheets
+- Designing fallback paths
+- Documenting an automation workflow clearly
 
 ---
 
-## Possible Improvements
+## Status
 
-- CRM integration
-- Lead scoring
-- Email notifications
-- Airtable database integration
-- Advanced qualification questions
-- Multi-language support
-
----
-
-## Screenshots
-
-### Workflow Architecture
-
-![Architecture](telegram-architecture.png)
-
-### Router Logic
-
-![Router](telegram-router.png)
-
-### Example Lead Log
-
-![Lead Log](telegram-google-sheets.png)
+Completed as part of an entry-level AI workflow automation portfolio.
