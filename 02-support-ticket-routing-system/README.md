@@ -131,3 +131,28 @@ This workflow helps support teams:
 ## Status
 
 Completed as part of an entry-level AI workflow automation portfolio.
+
+
+
+## Screenshots
+
+### Scenario Overview
+![Scenario Overview](../assets/project-02-support-ticket-routing/01-scenario-overview.png)
+
+### Tally Form Submission
+![Tally Form Submission](../assets/project-02-support-ticket-routing/02-tally-form-submission.png)
+
+### OpenAI Ticket Classification Output
+![OpenAI Ticket Classification Output](../assets/project-02-support-ticket-routing/03-openai-ticket-classification-output.png)
+
+### Google Sheets Ticket Database
+![Google Sheets Ticket Database](../assets/project-02-support-ticket-routing/04-google-sheets-ticket-database.png)
+
+### Router Routing Logic
+![Router Routing Logic](../assets/project-02-support-ticket-routing/05-router-routing-logic.png)
+
+### Telegram Alert Output
+![Telegram Alert Output](../assets/project-02-support-ticket-routing/06-telegram-alert-output.png)
+
+### Email Confirmation Output
+![Email Confirmation Output](../assets/project-02-support-ticket-routing/07-email-confirmation-output.png)
