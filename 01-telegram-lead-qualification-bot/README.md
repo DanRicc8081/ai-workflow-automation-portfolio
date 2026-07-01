@@ -120,11 +120,11 @@ Completed as part of an entry-level AI workflow automation portfolio.
 
 ### Scenario Overview
 
-![Scenario Overview](../assets/project-01-telegram-lead-qualification/01-scenario-overview.png.png)
+![Scenario Overview](../assets/project-01-telegram-lead-qualification/01-scenario-overview.png)
 
 ### OpenAI Intent Classification Output
 
-![OpenAI Intent Classification Output](../assets/project-01-telegram-lead-qualification/02-openai-classification-output.png.png)
+![OpenAI Intent Classification Output](../assets/project-01-telegram-lead-qualification/02-openai-classification-output.png)
 
 ### Google Sheets Lead Log
 
