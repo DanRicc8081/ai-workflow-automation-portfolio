@@ -125,3 +125,27 @@ This workflow helps businesses:
 
 Completed as part of an entry-level AI workflow automation portfolio.
 
+---
+
+## Screenshots
+
+### Scenario Overview
+
+![Scenario Overview](../assets/project-03-email-auto-responder/01-scenario-overview.png)
+
+### OpenAI Email Classification and Draft Output
+
+![OpenAI Email Classification Output](../assets/project-03-email-auto-responder/02-openai-email-classification-output.png)
+
+### Router Decision Logic
+
+![Router Decision Logic](../assets/project-03-email-auto-responder/03-router-decision-logic.png)
+
+### Gmail Draft Created
+
+![Gmail Draft Created](../assets/project-03-email-auto-responder/04-gmail-draft-created.png)
+
+### Email Labeled as Ignored
+
+![Email Labeled as Ignored](../assets/project-03-email-auto-responder/05-email-labeled-ignored.png)
+
