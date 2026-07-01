@@ -113,3 +113,27 @@ This workflow helps small businesses:
 ## Status
 
 Completed as part of an entry-level AI workflow automation portfolio.
+
+---
+
+## Screenshots
+
+### Scenario Overview
+
+![Scenario Overview](../assets/project-01-telegram-lead-qualification/01-scenario-overview.png.png)
+
+### OpenAI Intent Classification Output
+
+![OpenAI Intent Classification Output](../assets/project-01-telegram-lead-qualification/02-openai-classification-output.png.png)
+
+### Google Sheets Lead Log
+
+![Google Sheets Lead Log](../assets/project-01-telegram-lead-qualification/03-google-sheets-lead-log.png)
+
+### Telegram Conversation Output
+
+![Telegram Conversation Output](../assets/project-01-telegram-lead-qualification/04-telegram-auto-reply.png)
+
+### Router Logic
+
+![Router Logic](../assets/project-01-telegram-lead-qualification/05-router-logic.png)
