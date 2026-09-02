@@ -6,7 +6,7 @@ AI-assisted email workflow that analyzes incoming emails, classifies the message
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [Watch Demo Video](#)
+👉 [Watch Demo Video](https://www.loom.com/share/8f9fa840484b4247815abfff7724d752)
 
 ---
 
