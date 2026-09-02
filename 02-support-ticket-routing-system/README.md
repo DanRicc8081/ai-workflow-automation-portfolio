@@ -6,7 +6,7 @@ AI-powered support workflow that classifies incoming customer support tickets, e
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [Watch Demo Video](#)
+👉 [Watch Demo Video](https://www.loom.com/share/b9184abd167b42c789d4b6dba94762ef)
 
 ---
 
