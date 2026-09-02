@@ -34,7 +34,7 @@ Helps small businesses respond faster to inbound Telegram leads and avoid losing
 
 **Tools:** OpenAI, Make, Google Sheets, Telegram Bot API, Webhooks
 
-👉 [Watch Demo](#)  
+👉 [Watch Demo](https://www.loom.com/share/482df53075464475a711ecded108170a)  
 👉 [View Project](./01-telegram-lead-qualification-bot)
 
 ---
@@ -57,7 +57,7 @@ Helps support teams triage requests faster, prioritize urgent issues, and keep t
 
 **Tools:** OpenAI, Make, Tally, Google Sheets, Gmail, JSON parsing
 
-👉 [Watch Demo](#)  
+👉 [Watch Demo](https://www.loom.com/share/b9184abd167b42c789d4b6dba94762ef)  
 👉 [View Project](./02-support-ticket-routing-system)
 
 ---
@@ -80,7 +80,7 @@ Reduces repetitive email handling while keeping human control over final communi
 
 **Tools:** OpenAI, Make, Gmail API, Webhooks
 
-👉 [Watch Demo](#)  
+👉 [Watch Demo](https://www.loom.com/share/8f9fa840484b4247815abfff7724d752)  
 👉 [View Project](./03-email-support-auto-responder)
 
 ---
