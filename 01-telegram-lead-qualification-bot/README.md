@@ -6,7 +6,7 @@ AI-powered Telegram workflow that classifies incoming messages, identifies lead 
 
 Short walkthrough of the workflow and how it operates.
 
-👉 [Watch Demo Video](#)
+👉 [Watch Demo Video](https://www.loom.com/share/482df53075464475a711ecded108170a)
 
 ---
 
